@@ -7,16 +7,20 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["src", "vite.config.ts"]
+		"includes": ["**", "!src/**/*.css", "!node_modules", "!public"]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 120
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"suspicious": {
+				"noExplicitAny": "off"
+			}
 		}
 	},
 	"javascript": {
@@ -28,7 +32,7 @@
 		"enabled": true,
 		"actions": {
 			"source": {
-				"organizeImports": "on"
+				"organizeImports": "off"
 			}
 		}
 	}
