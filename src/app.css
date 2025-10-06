@@ -1,15 +1,41 @@
 @import "tailwindcss";
 
+body {
+    background-color: var(--color-muted);
+}
 
 @theme {
-    --font-display: "Satoshi", "sans-serif";
-    --breakpoint-3xl: 120rem;
-    --color-avocado-100: oklch(0.99 0 0);
-    --color-avocado-200: oklch(0.98 0.04 113.22);
-    --color-avocado-300: oklch(0.94 0.11 115.03);
-    --color-avocado-400: oklch(0.92 0.19 114.08);
-    --color-avocado-500: oklch(0.84 0.18 117.33);
-    --color-avocado-600: oklch(0.53 0.12 118.34);
-    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+    /* backgrounds */
+    --color-surface: #ffffff;
+    --color-muted: #f4f5f7;
+
+    /* estados */
+    --color-primary: #7b39ec;
+    --color-secondary: #ead4ff;
+    --color-success: #22c55e;
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+    --color-info: #0ea5e9;
+
+    /* textos */
+    --color-title: #111827;
+    --color-subtle: #6b7280;
+    --color-nav: #aeafb4;
+
+    /* table */
+    --color-t-head: #d4d3d8;
+}
+
+@layer components {
+    .input {
+        @apply w-full px-4 py-2 rounded-md border-1 border-gray-300 outline-0 cursor-pointer focus-within:border-primary;
+    }
+
+    .btn {
+        @apply rounded-md uppercase font-bold hover:scale-102 cursor-pointer p-4 flex items-center gap-3 transition-all;
+    }
+
+    .card {
+        @apply bg-surface border border-gray-300 rounded-md space-y-3 border-b-8 flex flex-col justify-between p-5;
+    }
 }

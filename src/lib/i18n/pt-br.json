@@ -1,0 +1,42 @@
+{
+	"labels": {
+		"select": "Selecione...",
+		"end": "Fim"
+	},
+	"components": {
+		"navbar": {
+			"register": "Cadastro",
+			"accountsPayable": "Contas a pagar",
+			"accountsReceivable": "Contas a receber",
+			"reports": "Relatórios",
+			"admin": "Admin",
+			"financial": "Financeiro"
+		},
+		"filters": {
+			"centerCost": "Centro de custo:",
+			"initialDate": "Data inicial:",
+			"finalDate": "Data final:",
+			"send": "Emitidos",
+			"pdf": "Pdf",
+			"search": "Pesquisar"
+		}
+	},
+	"pages": {
+		"dashboard": {
+			"chart": {
+				"title": "Resultados por período"
+			},
+			"table": {
+				"head": {
+					"name": "Nome",
+					"expense": "Despesa",
+					"revenue": "Receita",
+					"result": "Resultado"
+				},
+				"footer": {
+					"total": "Total"
+				}
+			}
+		}
+	}
+}
